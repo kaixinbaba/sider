@@ -1,2 +1,2 @@
 # sylvanas
-Redis TUI project, build with tui-rs
+A redis-client TUI project written by Rust

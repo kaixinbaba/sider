@@ -1,5 +1,10 @@
 #![forbid(unsafe_code)]
+mod cli;
 
-fn main() {
-    println!("hello redis");
+use sider::SDResult;
+
+fn main() -> SDResult<()> {
+    cli::parse_cli()?;
+
+    Ok(())
 }

@@ -1,5 +1,5 @@
 [package]
-name = "sylvanas"
+name = "sider"
 version = "0.1.0"
 edition = "2021"
 author = ["JeffXun <452914639@qq.com>"]
@@ -7,17 +7,21 @@ license = "GPL-3.0-or-later"
 readme = "README.md"
 description = "A redis-client TUI project written by Rust"
 keywords = ["tui", "terminal", "redis", "client"]
-repository = "https://github.com/kaixinbaba/sylvanas"
-homepage = "https://github.com/kaixinbaba/sylvanas"
+repository = "https://github.com/kaixinbaba/sider"
+homepage = "https://github.com/kaixinbaba/sider"
 
 [[bin]]
-name = "sylvanas"
+name = "sider"
 path = "src/main.rs"
+
+[lib]
+name = "sider"
 
 [dependencies]
 tui = "0.17.0"
 crossterm = "0.22"
 
+crossbeam = "0.8"
 clap = {version = "3.1.6", features = ["derive"]}
 anyhow = "1.0"
 thiserror = "1.0"
